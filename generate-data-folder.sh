@@ -32,8 +32,14 @@ fi
 
 echo "generate-data-folder: You will need to manually annotate the genders in spk2gender";
 
-bash generate-wav-scp-file.sh $data_folder $audio_folder;
+bash generate-wav-scp-file.sh $data_folder $audio_folder test;
+bash generate-wav-scp-file.sh $data_folder $audio_folder train;
 
+bash generate-text-file.sh $data_folder $audio_folder test;
+bash generate-text-file.sh $data_folder $audio_folder train;
+
+bash generate-utt2spk-file.sh $data_folder $audio_folder test;
+bash generate-utt2spk-file.sh $data_folder $audio_folder train;
 
 
 
