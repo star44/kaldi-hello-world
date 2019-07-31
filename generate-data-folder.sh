@@ -41,6 +41,8 @@ bash generate-text-file.sh $data_folder $audio_folder train;
 bash generate-utt2spk-file.sh $data_folder $audio_folder test;
 bash generate-utt2spk-file.sh $data_folder $audio_folder train;
 
+bash generate-corpus-file.sh $data_folder;
+
 
 
 
